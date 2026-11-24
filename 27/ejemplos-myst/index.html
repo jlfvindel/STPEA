@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ejemplos MyST · STPEA</title>
+<style>
+  :root {
+    --texto: #1f2937;
+    --suave: #6b7280;
+    --linea: #e5e7eb;
+    --acento: #2563eb;
+    --fondo-tarjeta: #f9fafb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    line-height: 1.55;
+    background: #fff;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 3rem; }
+  .migas { font-size: .9rem; color: var(--suave); margin: 0 0 1.5rem; }
+  .migas a { color: var(--suave); }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .75rem; }
+  .entrada { font-size: 1.05rem; margin: 0 0 2rem; }
+  ol { list-style: none; counter-reset: ejemplo; padding: 0; margin: 0; }
+  li {
+    counter-increment: ejemplo;
+    border: 1px solid var(--linea);
+    border-radius: .6rem;
+    background: var(--fondo-tarjeta);
+    margin: 0 0 1rem;
+  }
+  li a {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: .25rem 1rem;
+    padding: 1rem 1.25rem;
+    color: inherit;
+    text-decoration: none;
+    border-radius: .6rem;
+  }
+  li a:hover, li a:focus-visible { background: #eff6ff; outline: 2px solid var(--acento); outline-offset: -2px; }
+  li a::before {
+    content: counter(ejemplo);
+    grid-row: span 2;
+    align-self: start;
+    width: 2.5rem; height: 2.5rem;
+    border-radius: 50%;
+    background: var(--acento);
+    color: #fff;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .titulo { font-weight: 650; font-size: 1.1rem; color: var(--acento); }
+  .desc { color: var(--texto); font-size: .97rem; }
+  .notas { margin-top: 2rem; font-size: .95rem; }
+  .notas p { margin: 0 0 .6rem; }
+  footer { border-top: 1px solid var(--linea); margin-top: 2.5rem; padding-top: 1rem; font-size: .85rem; color: var(--suave); }
+</style>
+</head>
+<body>
+<main>
+  <p class="migas"><a href="../../">STPEA</a> › <a href="../">Edición 2026-27</a> › <a href="../stpea-curso/contenidos-y-actividades">Bloque 2</a></p>
+
+  <h1>Ejemplos de producción de materiales con MyST</h1>
+
+  <p class="entrada">Cuatro proyectos MyST, cada uno construido con el propio MyST, que muestran de forma guiada cómo producir materiales docentes: de la maquetación básica a los libros con código ejecutable. Se recomienda recorrerlos en orden.</p>
+
+  <ol>
+    <li>
+      <a href="uso-y-maquetacion/">
+        <span class="titulo">Usar MyST y maquetar</span>
+        <span class="desc">Qué es MyST, cómo se instala, se ejecuta y se exporta a web, PDF y Word. Tipografía, bloques y tablas.</span>
+      </a>
+    </li>
+    <li>
+      <a href="recursos-multimedia/">
+        <span class="titulo">Recursos multimedia</span>
+        <span class="desc">Imágenes, figuras, vídeos, ecuaciones, código, diagramas y páginas incrustadas, citados con ventanas emergentes.</span>
+      </a>
+    </li>
+    <li>
+      <a href="reutilizar-y-enlazar/">
+        <span class="titulo">Reutilizar y enlazar</span>
+        <span class="desc">Un repositorio de fragmentos para montar distintas presentaciones: incrustación, numeración, enunciados, glosario, índice, bibliografía y varias configuraciones.</span>
+      </a>
+    </li>
+    <li>
+      <a href="libros-ejecutables/">
+        <span class="titulo">Libros ejecutables</span>
+        <span class="desc">Cuadernos Jupyter en un libro y opciones para que los estudiantes los ejecuten, con JupyterLite en el navegador.</span>
+      </a>
+    </li>
+  </ol>
+
+  <div class="notas">
+    <p>Cada ejemplo ofrece su fuente completa en el botón de descarga, arriba a la derecha de cada página, para ejecutarlo y modificarlo en el propio ordenador.</p>
+    <p>Los ejemplos se han preparado en colaboración con un asistente de inteligencia artificial (Claude, de Anthropic); el autor ha decidido su enfoque, los ha revisado y responde de su contenido.</p>
+  </div>
+
+  <footer>José Luis Fernández Vindel · Licencia CC BY 4.0</footer>
+</main>
+</body>
+</html>

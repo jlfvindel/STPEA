@@ -1,0 +1,9 @@
+# Construcción local
+_build/
+publicar/
+descargas/*.zip
+.jupyterlite.doit.db
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store

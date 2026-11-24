@@ -1,0 +1,43 @@
+# -------------------------------------------------------------
+#  myst.yml · Proyecto 4, libro con cuadernos (edición estática)
+#  Se usa con:  myst start
+#  Para ejecutar los cuadernos al construir:  myst start --execute
+#
+#  Las salidas que se ven son las guardadas en los cuadernos
+#  (o las calculadas con --execute). En la página no se puede
+#  ejecutar nada: para eso están myst-lite.yml y myst-local.yml.
+# -------------------------------------------------------------
+version: 1
+
+project:
+  title: 'Proyecto 4: libros ejecutables'
+  authors:
+    - name: José Luis Fernández Vindel
+  license: CC-BY-4.0
+
+  downloads:
+    - file: descargas/libros-ejecutables.zip
+      title: Fuente del proyecto (zip)
+
+  numbering:
+    figure:
+      template: figura %s
+
+  toc:
+    - file: index.md
+
+    - title: Guía
+      children:
+        - file: guia/cuadernos.md
+        - file: guia/opciones.md
+        - file: guia/en-la-pagina.md
+        - file: guia/jupyterlite.md
+
+    - title: Cuadernos
+      children:
+        - file: cuadernos/trayectorias.ipynb
+          title: Trayectorias          # título del menú
+        - file: cuadernos/alcance.md
+
+site:
+  template: book-theme

@@ -1,0 +1,20 @@
+# -------------------------------------------------------------
+#  myst-local.yml · Proyecto 4, celdas ejecutables con un Jupyter local
+#  Requiere un servidor Jupyter en marcha en el puerto 8888
+#  (en la carpeta del proyecto, en otra terminal):
+#    jupyter server --IdentityProvider.token=clase2026 \
+#        --ServerApp.allow_origin=http://localhost:3000
+#  Después, aquí:  myst --config myst-local.yml start
+#
+#  Las celdas se ejecutan con el Python del propio ordenador,
+#  con todos sus paquetes.
+# -------------------------------------------------------------
+version: 1
+extends: myst.yml
+
+project:
+  title: 'Proyecto 4: libro ejecutable con Jupyter local'
+  jupyter:
+    server:
+      url: http://localhost:8888/
+      token: clase2026

@@ -1,0 +1,17 @@
+# -------------------------------------------------------------
+#  myst-lite.yml · Proyecto 4, celdas ejecutables con JupyterLite
+#  Se usa con:  myst --config myst-lite.yml start
+#  Para publicar en un servidor web:  ./publicar.sh
+#
+#  Hereda todo myst.yml y añade «jupyter: lite»: las celdas de
+#  los cuadernos se ejecutan en el navegador del estudiante, con
+#  Python compilado para la web (Pyodide). No necesita ningún
+#  servidor de cálculo: basta un servidor web normal.
+# -------------------------------------------------------------
+version: 1
+extends: myst.yml
+
+project:
+  title: 'Proyecto 4: libro ejecutable en el navegador'
+  jupyter:
+    lite: true

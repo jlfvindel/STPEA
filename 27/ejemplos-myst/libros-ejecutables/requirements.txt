@@ -1,0 +1,4 @@
+# Paquetes que necesitan los cuadernos (ejecución local o en Binder)
+numpy
+matplotlib
+ipykernel
