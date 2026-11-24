@@ -7,3 +7,5 @@ descargas/*.zip
 
 # Sistema
 .DS_Store
+*.tar
+*.tar.gz
