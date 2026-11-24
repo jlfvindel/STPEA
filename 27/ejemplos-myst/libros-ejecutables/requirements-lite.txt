@@ -1,3 +1,6 @@
 # Paquetes para construir el sitio JupyterLite (solo quien publica)
 jupyterlite-core
 jupyterlite-pyodide-kernel
+
+# Necesario para incluir cuadernos propios (--contents)
+jupyter-server
